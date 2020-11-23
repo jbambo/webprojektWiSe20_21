@@ -4,8 +4,8 @@
 }
 
 * {
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
     font-family: thewitcher;
 }
@@ -66,7 +66,6 @@ ul, ol {
     text-align: left;
     padding: 5px;
     margin-left: auto;
-
 }
 
 #logo img {
@@ -110,32 +109,35 @@ ul, ol {
 .open_menu {
     display: inline;
 }
-#mainNavi{
+
+#mainNavi {
     background-image: linear-gradient(-90deg,
     rgb(89, 241, 167) 25%,
     rgb(60, 167, 248) 50%,
     rgb(123, 24, 236) 75%,
-    rgb(168, 12, 207) 100%);;
+    rgb(168, 12, 207) 100%);
 }
-#mainNavi a:link{
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-bottom: 15px;
-    padding-right: 90%;
+
+#mainNavi a:link {
+    padding: 15px;
 }
+
 #mainNavi a:hover, a:active {
     color: black;
     background-color: rgba(184, 181, 184, 0.3);
 }
+
 /*set links*/
 a:link {
     color: #000000;
     text-decoration: none;
 }
+
 a:visited, a:active {
     text-decoration: none;
     color: #000000
 }
+
 /*set colors for tablet and desktop*/
 @media screen and (min-width: 768px) {
     #metaNavi {
@@ -145,13 +147,12 @@ a:visited, a:active {
         background: rgb(123, 24, 236);
         border-radius: 0 0 10px 10px;
     }
-    #metaNavi a:link{
+    #metaNavi a:link {
         padding: 8px;
     }
-    #metaNavi a:hover{
+    #metaNavi a:hover {
         background-color: rgba(184, 181, 184, 0.3);
     }
-
     .content_max_width {
         max-width: 1200px;
         margin: auto;
@@ -159,7 +160,7 @@ a:visited, a:active {
 
     #mainNavi li {
         display: inline-block;
-        margin-right: 5px;
+
     }
 
     #mainNavi ul {
@@ -169,14 +170,17 @@ a:visited, a:active {
     #mainNavi a {
         border: 0 none;
         font-size: 20px;
-        padding: 20px;
+        display: inline-flex;
+
     }
+
     #mainNavi a:hover {
         color: black;
         background-color: rgba(184, 181, 184, 0.3);
 
     }
-    #toggle_menu{
+
+    #toggle_menu {
         display: none;
     }
 }
