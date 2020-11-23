@@ -1,4 +1,4 @@
-@font-face {
+@import "thewitcher";{
     font-family: "thewitcher-medium";
     src: url("/thewitcher/thewitcher.ttf");
 }
@@ -120,6 +120,8 @@ ul, ol {
 
 #mainNavi a:link {
     padding: 15px;
+    transition: 0.5s;
+
 }
 
 #mainNavi a:hover, a:active {
