@@ -1,13 +1,15 @@
-@font-face {
-    font-family: "thewitcher-medium";
-    src: url("/thewitcher/thewitcher.ttf");
+@font-face{
+    font-family:"thewitcher-medium";
+    src:url("https://dafonttop.com/wp-data/t/406/6406/file/thewitcher-4.ttf") format("woff"),
+    url("https://dafonttop.com/wp-data/t/406/6406/file/thewitcher-4.ttf") format("opentype"),
+    url("https://dafonttop.com/wp-data/t/406/6406/file/thewitcher-4.ttf") format("truetype");
 }
 
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: thewitcher-medium;
+    font-family: "thewitcher-medium",thewitcher;
 }
 
 img {
@@ -18,6 +20,7 @@ img {
 header {
     background-image: url("../img/hgradient.png");
     background-size: cover;
+    background-attachment: scroll;
 }
 
 footer, main {
@@ -52,20 +55,21 @@ body, aside, section, #page {
 
 /*paddings and margins*/
 header, main, footer, section, aside {
-    padding: 15px;
-    margin: 15px;
+    padding: 8px;
+    margin: 5px;
 }
 
+
+
 ul, ol {
-    margin-left: 20px;
-    padding: 10px;
+    text-align: center;
+    padding: 5px;
 }
 
 /*header*/
 #logo {
     text-align: left;
-    padding: 5px;
-    margin-left: auto;
+    padding: 10px;
 }
 
 #logo img {
@@ -96,10 +100,10 @@ ul, ol {
 #mainNavi li {
     display: block;
     list-style-type: none;
-}
 
+}
 #mainNavi.open ul {
-    display: inline;
+    display: inline-block;
 }
 
 .close_menu {
@@ -119,8 +123,9 @@ ul, ol {
 }
 
 #mainNavi a:link {
-    padding: 15px;
-    transition: 0.5s;
+    padding: 5px;
+    transition: 0.9s;
+    font-size: 35px;
 
 }
 
@@ -140,7 +145,7 @@ a:visited, a:active {
     color: #000000
 }
 
-/*set colors for tablet and desktop*/
+/*set  for tablet and desktop*/
 @media screen and (min-width: 768px) {
     #metaNavi {
         display: block;
@@ -149,12 +154,15 @@ a:visited, a:active {
         background: rgb(123, 24, 236);
         border-radius: 0 0 10px 10px;
     }
+
     #metaNavi a:link {
         padding: 8px;
     }
+
     #metaNavi a:hover {
         background-color: rgba(184, 181, 184, 0.3);
     }
+
     .content_max_width {
         max-width: 1200px;
         margin: auto;
@@ -162,17 +170,17 @@ a:visited, a:active {
 
     #mainNavi li {
         display: inline-block;
-
     }
 
     #mainNavi ul {
         display: block;
     }
 
-    #mainNavi a {
-        border: 0 none;
-        font-size: 20px;
-        display: inline-flex;
+    #mainNavi a:link {
+        font-size: 35px;
+        display: inline-block;
+        transition: 0.9s;
+        padding: 15px;
 
     }
 
@@ -181,7 +189,6 @@ a:visited, a:active {
         background-color: rgba(184, 181, 184, 0.3);
 
     }
-
     #toggle_menu {
         display: none;
     }
