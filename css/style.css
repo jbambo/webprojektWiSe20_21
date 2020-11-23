@@ -1,4 +1,4 @@
-@import "thewitcher";{
+@font-face {
     font-family: "thewitcher-medium";
     src: url("/thewitcher/thewitcher.ttf");
 }
@@ -7,7 +7,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: thewitcher;
+    font-family: thewitcher-medium;
 }
 
 img {
