@@ -170,10 +170,36 @@ aside img {
 
 /* footer*/
 #formDiv {
+    font-size: 20px;
     padding: 15px;
     margin: 15px;
     border-bottom: solid #00ffc6 3px;
 }
+footer form{
+    padding: 10px;
+}
+
+footer label{
+    display: block;
+}
+
+.textInput{
+    width: 100%;
+    padding: 5px;
+}
+footer textarea{
+    width: 100%;
+    height: 120px;
+}
+footer form .radio_buttons{
+    margin-bottom: 10px;
+
+}
+footer form .radio_buttons{
+    margin-bottom: 10px;
+
+}
+
 
 #sendButton{
     font-size: 25px;
