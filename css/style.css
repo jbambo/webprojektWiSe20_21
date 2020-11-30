@@ -7,7 +7,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "thewitcher-medium",Serif ;
+    font-family: "thewitcher-medium", Serif;
+    border-radius: 10px 10px 10px 10px;
 }
 
 img {
@@ -22,7 +23,7 @@ header {
     background-repeat: no-repeat;
 }
 
-footer, main {
+footer, main, #availability_days {
     background-image: linear-gradient(-150deg,
     rgb(89, 241, 167) 25%,
     rgb(60, 167, 248) 50%,
@@ -32,7 +33,7 @@ footer, main {
     background-attachment: fixed;
 }
 
-body, aside, section, #page {
+body, aside, section, #page, #formDiv, #socialDiv {
     background-image: linear-gradient(30deg,
     rgb(89, 241, 167) 25%,
     rgb(60, 167, 248) 50%,
@@ -50,6 +51,10 @@ body, aside, section, #page {
 header, main, footer, section, aside {
     padding: 8px;
     margin: 5px;
+}
+
+aside {
+    padding: 15px;
 }
 
 ul, ol {
@@ -126,6 +131,55 @@ ul, ol {
     display: inline;
 }
 
+/*section and aside */
+section {
+    border: solid #00ffc6 3px;
+
+}
+
+aside {
+    font-size: 20px;
+    border: solid #00ffc6 3px;
+
+}
+
+aside a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 25px;
+    transition: 1.5s;
+}
+
+aside img {
+    margin: 10px 0px;
+    width: 150px;
+    border: solid #00ffc6 3px;
+}
+
+#availability_days {
+    margin: 5px;
+    border: solid #00ffc6 3px;
+    padding: 10px;
+
+}
+
+#availability_days span {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+/* footer*/
+#formDiv {
+    padding: 15px;
+    margin: 15px;
+    border-bottom: solid #00ffc6 3px;
+}
+
+#sendButton{
+    font-size: 25px;
+}
+
 /*set links*/
 a:link {
     color: #000000;
@@ -144,7 +198,7 @@ a:visited, a:active {
         float: right;
         padding: 5px;
         background: rgb(123, 24, 236);
-        border-radius: 0 0 10px 10px;
+        border-radius: 10px 10px 10px 10px;
     }
 
     #metaNavi a:link {
@@ -190,4 +244,19 @@ a:visited, a:active {
     #toggle_menu {
         display: none;
     }
+
+    main {
+        display: flex;
+        padding: 35px 25px 25px;
+    }
+
+    main > section {
+        flex: 1;
+    }
+
+    main > aside {
+        flex: 0 0 280px;
+        margin-left: 20px;
+    }
+
 }

@@ -61,6 +61,8 @@
       <workItem from="1606664761845" duration="227000" />
       <workItem from="1606665990966" duration="2669000" />
       <workItem from="1606730213777" duration="2072000" />
+      <workItem from="1606750637661" duration="698000" />
+      <workItem from="1606754936762" duration="7025000" />
     </task>
     <servers />
   </component>
@@ -68,6 +70,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="463" y="129" key="#Inspections" timestamp="1606759945719">
+      <screen x="0" y="0" width="1676" height="902" />
+    </state>
+    <state x="463" y="129" key="#Inspections/0.0.1676.902/-1920.0.1676.902@0.0.1676.902" timestamp="1606759945719" />
     <state x="591" y="252" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606156287826">
       <screen x="0" y="0" width="1676" height="902" />
     </state>
