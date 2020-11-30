@@ -1,13 +1,13 @@
 @font-face {
-    font-family:"thewitcher-medium";
-    src: url("/thewitcher-font/thewitcher-font.ttf");
+    font-family: "thewitcher-medium";
+    src: url("../thewitcher-font/thewitcher-font.ttf");
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "thewitcher-medium";
+    font-family: "thewitcher-medium",Serif ;
 }
 
 img {
