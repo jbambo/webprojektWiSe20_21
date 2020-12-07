@@ -33,11 +33,22 @@ function showWeekdaysOfEmployee(element) {
 }// function end
 
 let availabilityContainer= document.getElementById("availability_days"); //pass the element with id to variable
-//check if the element in DOM
+//check if the element is in DOM
 if (availabilityContainer){
     showWeekdaysOfEmployee(availabilityContainer); //initialize the function with variable
 }
 
+//form options
+
+let radioButtons = document.getElementsByName("format");
+
+radioButtons.forEach(function(element){
+    element.addEventListener("click",function (){
+        let contactForm = document.getElementById("contact_form");
+        contactForm.classList.remove("newsletter","contact");
+        contactForm.classList.add(element.value)
+    });
+});
 
 
 

@@ -14,7 +14,7 @@
             <a href="impressum.html">Datenschutz</a>
         </nav>
         <div id="logo">
-            <a href="index.html"><img alt="logo" src="img/logo.png"></a>
+            <a href="index.html"><img class="roll" alt="logo" src="img/logo.png"></a>
         </div>
 
         <nav id="mainNavi">
@@ -47,7 +47,7 @@
         </section>
         <aside>
             <h3>Your consultant:</h3>
-            <img alt="Martin" src="img/consultant.png">
+            <img class="roll" alt="Martin" src="img/consultant.png">
             <p><b>Martin, The Consultant</b><br><br>
                 <a href="tel:+49657390234">Tel.: +49657390234</a><br><br>
                 <a href="mailto:martinconsultant@jokes.de">Contact me!</a>
@@ -57,21 +57,65 @@
     </main>
 
     <footer>
-        <div id="formDiv">
+        <!-- contact form div  -->
+        <div>
             <form action="#" id="contact_form">
                 <h2>Contact us!</h2>
                 <div class="radio_buttons">
-                    <label checked="checked" name="format" value="newsletter">Sign up for newsletter</label>
-                    <label name="format" value="contact">Contact</label>
+                    <label>
+                        <input checked="checked" name="format" type="radio" value="newsletter">
+                        Sign up for newsletter
+                    </label>
+
+                    <label>
+                        <input name="format" type="radio" value="contact">
+                        Contact
+                    </label>
                 </div>
-                <label class="contact_field">Your name:<br><input class="textInput" name="username" type="text"></label>
-                <label class="contact_field"><br>Your email:<br><input class="textInput" name="usermail" type="text"></label>
-                <label class="contact_field"><br>Your message:<br><textarea name="user_message"></textarea></label>
+
+                <label class="contact_field">
+                    Your name:<br>
+                    <input class="textInput" name="username" type="text">
+                </label>
+
+                <label>
+                    <br>Your email:<br>
+                    <input class="textInput" name="usermail" type="text">
+                </label>
+
+                <label class="contact_field">
+                    <br>Your message:<br>
+                    <textarea class="textInput" name="user_message"></textarea>
+                </label>
+
                 <input id="sendButton" type="button" value="send">
             </form>
         </div>
-
-        <div id="socialDiv"></div>
+        <!-- Social media div -->
+        <div>
+            <p>Follow us on: </p>
+            <ul id="socialMedia">
+                <li>
+                    <a href="https://youtu.be/fOqTBGIvnEo" target="_blank">
+                        <img src="img/yt_icon.png" alt="youtube">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/Wied%C5%BAmin-ze-szko%C5%82y-bi%C5%82gorajskiej-102923734881304" target="_blank">
+                        <img src="img/fb_icon.png" alt="facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/witcher_bilgoraj/?hl=de" target="_blank">
+                        <img src="img/insta_icon.png" alt="instagram">
+                    </a>
+                </li>
+            </ul>
+            <nav id="metanavi2">
+                <a href="impressum.html" >Impressum</a>
+                <a href="impressum.html">Datenschutz</a>
+            </nav>
+        </div>
     </footer>
 </div>
 <script src="js/script.js"></script>

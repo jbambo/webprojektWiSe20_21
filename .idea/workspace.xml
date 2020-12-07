@@ -63,7 +63,9 @@
       <workItem from="1606730213777" duration="2072000" />
       <workItem from="1606750637661" duration="698000" />
       <workItem from="1606754936762" duration="9725000" />
-      <workItem from="1606849124348" duration="633000" />
+      <workItem from="1606849124348" duration="1294000" />
+      <workItem from="1607358444639" duration="8375000" />
+      <workItem from="1607367049183" duration="373000" />
     </task>
     <servers />
   </component>
@@ -79,6 +81,10 @@
       <screen x="0" y="0" width="1676" height="902" />
     </state>
     <state x="591" y="252" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1676.902/-1920.0.1676.902@0.0.1676.902" timestamp="1606156287826" />
+    <state x="517" y="186" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1607358501336">
+      <screen x="0" y="0" width="1676" height="902" />
+    </state>
+    <state x="517" y="186" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1676.902/-1920.0.1676.902@0.0.1676.902" timestamp="1607358501336" />
     <state x="567" y="197" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606161278104">
       <screen x="0" y="0" width="1676" height="902" />
     </state>
