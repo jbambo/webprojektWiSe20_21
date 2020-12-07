@@ -365,7 +365,7 @@ a:visited, a:active {
     }
 
     .roll:hover{
-        transform: rotate(720deg);
+        transform: rotate(3600deg);
         transition: 3s;
     }
 }
