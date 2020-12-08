@@ -65,7 +65,7 @@
       <workItem from="1606754936762" duration="9725000" />
       <workItem from="1606849124348" duration="1294000" />
       <workItem from="1607358444639" duration="8375000" />
-      <workItem from="1607367049183" duration="373000" />
+      <workItem from="1607367049183" duration="2347000" />
     </task>
     <servers />
   </component>
@@ -77,6 +77,10 @@
       <screen x="0" y="0" width="1676" height="902" />
     </state>
     <state x="463" y="129" key="#Inspections/0.0.1676.902/-1920.0.1676.902@0.0.1676.902" timestamp="1606759945719" />
+    <state x="429" y="91" key="#Plugins" timestamp="1607367780843">
+      <screen x="0" y="0" width="1676" height="902" />
+    </state>
+    <state x="429" y="91" key="#Plugins/0.0.1676.902/-1920.0.1676.902@0.0.1676.902" timestamp="1607367780843" />
     <state x="591" y="252" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606156287826">
       <screen x="0" y="0" width="1676" height="902" />
     </state>
@@ -93,6 +97,10 @@
       <screen x="0" y="0" width="1676" height="902" />
     </state>
     <state x="199" y="209" key="FileChooserDialogImpl/0.0.1676.902/-1920.0.1676.902@0.0.1676.902" timestamp="1605558055912" />
+    <state x="494" y="206" key="run.anything.popup" timestamp="1607370870933">
+      <screen x="0" y="0" width="1676" height="902" />
+    </state>
+    <state x="494" y="206" key="run.anything.popup/0.0.1676.902/-1920.0.1676.902@0.0.1676.902" timestamp="1607370870933" />
     <state x="920" y="196" key="search.everywhere.popup" timestamp="1605545173244">
       <screen x="0" y="0" width="1676" height="902" />
     </state>

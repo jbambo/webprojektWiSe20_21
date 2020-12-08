@@ -221,6 +221,19 @@ footer > div:first-child { /* all elements that are children of footer, this exa
     cursor: pointer;
     border: solid #00ffc6 3px;
 }
+#error_messages{
+    padding: 5px;
+    border: 5px solid #8b0000;
+    display: none;
+}
+#error_messages.show{
+    display: block;
+}
+
+#contact_form > label .error {
+    background-color: rgba(239, 188, 188, 0.6);
+}
+
 
 /*form options*/
 
@@ -230,6 +243,8 @@ footer > div:first-child { /* all elements that are children of footer, this exa
 #contact_form.contact >label.contact_field{
     display: block;
 }
+
+
 
 /* social media div*/
 footer > div:last-child {
