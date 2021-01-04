@@ -57,7 +57,6 @@ body, aside, section, #page, footer > div:first-child, footer > div:last-child {
 }
 
 
-
 /*paddings and margins*/
 header, main, footer, section, aside {
     padding: 8px;
@@ -92,10 +91,11 @@ table, tr, td {
 
 th, td {
     padding: 8px;
-    display: inline-block;
-    width: 50%;
 }
-
+.fourColTable th,td{
+    display: inline-block;
+    width: 25%;
+}
 table {
     border-collapse: collapse;
     border: #00ffc6 solid 3px;
@@ -124,9 +124,7 @@ tr:nth-child(even) {
 }
 
 /*buttons*/
-.center{
-    text-align: center;
-}
+
 
 .buttons a {
     display: inline-block;
@@ -138,26 +136,11 @@ tr:nth-child(even) {
 }
 
 
-.buttons a.button1:hover {
-    background-color: #00ffc6;
-    color: rgb(168, 12, 207);
-    transition: 1s;
-    box-shadow: 5px 5px 5px rgb(255, 0, 0);
-
-}
-
 .buttons a.button2 {
     background-color: #00ffc6;
     color: rgb(168, 12, 207);
 }
 
-.buttons a.button2:hover {
-    background-color: rgb(168, 12, 207);
-    color: #00ffc6;;
-    transition: 1s;
-    box-shadow: 5px 5px 5px rgb(255, 0, 0);
-
-}
 
 /*columns */
 .multiCols > div {
@@ -239,7 +222,7 @@ tr:nth-child(even) {
 
 }
 
- #mainNavi a:active {
+#mainNavi a:active {
     color: black;
     background-color: rgba(255, 255, 255, 0.5);
 }
@@ -437,6 +420,25 @@ a:visited, a:active {
 
 /*set  for tablet and desktop*/
 @media screen and (min-width: 768px) {
+    .center {
+        text-align: center;
+    }
+    .buttons a.button1:hover {
+        background-color: #00ffc6;
+        color: rgb(168, 12, 207);
+        transition: 1s;
+        box-shadow: 5px 5px 5px rgb(255, 0, 0);
+
+    }
+
+    .buttons a.button2:hover {
+        background-color: rgb(168, 12, 207);
+        color: #00ffc6;;
+        transition: 1s;
+        box-shadow: 5px 5px 5px rgb(255, 0, 0);
+
+    }
+
     .multiCols {
         display: flex;
     }
@@ -503,7 +505,8 @@ a:visited, a:active {
         transform: scale(1.1);
 
     }
-    #mainNavi a.current{
+
+    #mainNavi a.current {
         background-image: linear-gradient(90deg,
         rgb(89, 241, 167) 25%,
         rgb(60, 167, 248) 50%,
