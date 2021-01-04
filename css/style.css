@@ -142,7 +142,7 @@ tr:nth-child(even) {
     background-color: #00ffc6;
     color: rgb(168, 12, 207);
     transition: 1s;
-    box-shadow: 5px 5px 5px rgb(83, 191, 196);
+    box-shadow: 5px 5px 5px rgb(255, 0, 0);
 
 }
 
@@ -155,7 +155,7 @@ tr:nth-child(even) {
     background-color: rgb(168, 12, 207);
     color: #00ffc6;;
     transition: 1s;
-    box-shadow: 5px 5px 5px rgb(83, 191, 196);
+    box-shadow: 5px 5px 5px rgb(255, 0, 0);
 
 }
 
