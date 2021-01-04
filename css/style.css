@@ -7,7 +7,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "thewitcher-medium", Serif;
+    font-family: "thewitcher-medium", sans-serif;
     border-radius: 10px;
 }
 
@@ -23,7 +23,7 @@ header {
     background-repeat: no-repeat;
 }
 
-footer, main, #availability_days {
+footer, main, #availability_days, #scrollToTop {
     background-image: linear-gradient(-150deg,
     rgb(89, 241, 167) 25%,
     rgb(60, 167, 248) 50%,
@@ -51,14 +51,21 @@ body, aside, section, #page, footer > div:first-child, footer > div:last-child {
     rgb(168, 12, 207) 100%);
 }
 
+
 .font35 {
     font-size: 35px;
 }
+
+
 
 /*paddings and margins*/
 header, main, footer, section, aside {
     padding: 8px;
     margin: 5px;
+}
+
+section {
+    padding: 10px;
 }
 
 aside, aside a:link {
@@ -69,14 +76,121 @@ ul, ol {
     padding: 5px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 10px;
+}
+
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+    margin-top: 0;
+}
+
+/*table*/
+table, tr, td {
+    border-radius: unset;
+}
+
+
+th, td {
+    padding: 8px;
+    display: inline-block;
+    width: 50%;
+}
+
+table {
+    border-collapse: collapse;
+    border: #00ffc6 solid 3px;
+    width: 100%;
+}
+
+tr {
+    background-color: rgb(60, 167, 248);
+}
+
+tr:nth-child(even) {
+    background-color: rgb(123, 24, 236);
+}
+
+/*video div*/
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+.video iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    position: absolute;
+}
+
+/*buttons*/
+.center{
+    text-align: center;
+}
+
+.buttons a {
+    display: inline-block;
+    padding: 10px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    background-color: rgb(168, 12, 207);
+    color: #00ffc6;
+}
+
+
+.buttons a.button1:hover {
+    background-color: #00ffc6;
+    color: rgb(168, 12, 207);
+    transition: 1s;
+    box-shadow: 5px 5px 5px rgb(83, 191, 196);
+
+}
+
+.buttons a.button2 {
+    background-color: #00ffc6;
+    color: rgb(168, 12, 207);
+}
+
+.buttons a.button2:hover {
+    background-color: rgb(168, 12, 207);
+    color: #00ffc6;;
+    transition: 1s;
+    box-shadow: 5px 5px 5px rgb(83, 191, 196);
+
+}
+
+/*columns */
+.multiCols > div {
+    margin-bottom: 20px;
+}
+
+.multiCols > div > :last-child {
+    margin-bottom: 0;
+}
+
+.multiColsPadding > div {
+    padding: 10px;
+
+}
+
+.multiColsPadding img {
+    padding: 5px;
+    display: block;
+    margin-bottom: 15px;
+}
+
 /*header*/
 #logo {
     text-align: left;
     padding: 10px;
 }
 
-#logo img {
+#logo a > img {
     width: 200px;
+}
+
+#show {
+    margin-left: 20px;
 }
 
 #toggle_menu {
@@ -91,9 +205,10 @@ ul, ol {
     width: 35px;
 }
 
-#metaNavi, #metaNavi ul {
+#metaNavi, #mainNavi ul {
     display: none;
 }
+
 
 #mainNavi li {
     display: block;
@@ -106,6 +221,13 @@ ul, ol {
     display: block;
 }
 
+.open #toggle_menu .openMenu {
+    display: none;
+}
+
+.open #toggle_menu .closeMenu {
+    display: inline;
+}
 
 #mainNavi a:link {
     text-align: center;
@@ -113,21 +235,21 @@ ul, ol {
     display: inline-block;
     margin: auto;
     width: 100%;
-    transition: 1.0s;
     font-size: 35px;
 
 }
 
-#mainNavi a:hover, #mainNavi a:active {
+ #mainNavi a:active {
     color: black;
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-.close_menu {
+
+.closeMenu {
     display: none;
 }
 
-.open_menu {
+.openMenu {
     display: inline;
 }
 
@@ -149,7 +271,7 @@ aside a:hover {
 }
 
 aside img {
-    margin: 10px 0px;
+    margin: 10px 0;
     width: 150px;
     border: solid #00ffc6 3px;
 }
@@ -212,7 +334,7 @@ footer > div:first-child { /* all elements that are children of footer, this exa
 #contact_form input[type="button"] {
     margin-top: 5px;
     font-size: 25px;
-    padding: 5px 5px 0px 5px;
+    padding: 5px 5px 0 5px;
     background-image: linear-gradient(-60deg,
     rgb(89, 241, 167) 25%,
     rgb(60, 167, 248) 50%,
@@ -221,12 +343,14 @@ footer > div:first-child { /* all elements that are children of footer, this exa
     cursor: pointer;
     border: solid #00ffc6 3px;
 }
-#error_messages{
+
+#error_messages {
     padding: 5px;
     border: 5px solid #8b0000;
     display: none;
 }
-#error_messages.show{
+
+#error_messages.show {
     display: block;
 }
 
@@ -237,13 +361,37 @@ footer > div:first-child { /* all elements that are children of footer, this exa
 
 /*form options*/
 
-#contact_form > label.contact_field{
+#contact_form > label.contact_field {
     display: none;
 }
-#contact_form.contact >label.contact_field{
+
+#contact_form.contact > label.contact_field {
     display: block;
 }
 
+/*Fehlermeldungen Kontaktanfrage*/
+#error_messages {
+    padding: 10px;
+    border: 1px solid #f00;
+    color: #f00;
+    margin: 5px;
+    display: none;
+}
+
+#error_messages.show {
+    display: block;
+}
+
+label.error {
+    font-size: 22px;
+    color: #f00;
+}
+
+
+/*back to top button*/
+#scrollToTop {
+    display: none;
+}
 
 
 /* social media div*/
@@ -289,6 +437,22 @@ a:visited, a:active {
 
 /*set  for tablet and desktop*/
 @media screen and (min-width: 768px) {
+    .multiCols {
+        display: flex;
+    }
+
+    .multiCols > div {
+        flex: 1;
+    }
+
+    .multiColsMargin {
+        margin-left: 10px;
+    }
+
+    .multiColsMargin > div > :first-child {
+        margin-left: 0;
+    }
+
     #metaNavi {
         display: block;
         float: right;
@@ -304,6 +468,10 @@ a:visited, a:active {
 
     #metaNavi a:hover {
         background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    #logo {
+        max-width: 50%;
     }
 
     .content_max_width {
@@ -323,7 +491,6 @@ a:visited, a:active {
     }
 
     #mainNavi a:link {
-
         text-align: center;
         font-size: 35px;
         display: inline-block;
@@ -335,6 +502,13 @@ a:visited, a:active {
         background-color: rgba(255, 255, 255, 0.5);
         transform: scale(1.1);
 
+    }
+    #mainNavi a.current{
+        background-image: linear-gradient(90deg,
+        rgb(89, 241, 167) 25%,
+        rgb(60, 167, 248) 50%,
+        rgb(123, 24, 236) 75%,
+        rgb(168, 12, 207) 100%);
     }
 
     #toggle_menu {
@@ -379,8 +553,26 @@ a:visited, a:active {
         transform: scale(1.3);
     }
 
-    .roll:hover{
-        transform: rotate(3600deg);
-        transition: 3s;
+    .roll:hover {
+        transform: rotate(360deg);
+        transition: 1s;
+    }
+
+    #scrollToTop {
+        font-size: 20px;
+        bottom: 0;
+        right: 50px;
+        cursor: pointer;
+        position: fixed;
+        padding: 10px;
+    }
+
+    #scrollToTop:hover {
+        font-size: 25px;
+        transition: 1s;
+    }
+
+    #scrollToTop.show {
+        display: block;
     }
 }
