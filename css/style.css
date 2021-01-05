@@ -72,7 +72,8 @@ aside, aside a:link {
 }
 
 ul, ol {
-    padding: 5px;
+    margin-left: 5px;
+    padding: 10px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -88,13 +89,13 @@ table, tr, td {
     border-radius: unset;
 }
 
-
 th, td {
-    padding: 8px;
+    padding: 10px;
 }
 .fourColTable th,td{
     display: inline-block;
     width: 25%;
+    word-break: break-word ;
 }
 table {
     border-collapse: collapse;
@@ -103,11 +104,11 @@ table {
 }
 
 tr {
-    background-color: rgb(60, 167, 248);
+    background-color: rgb(210, 200, 149);
 }
 
 tr:nth-child(even) {
-    background-color: rgb(123, 24, 236);
+    background-color: rgb(152, 217, 151);
 }
 
 /*video div*/
