@@ -172,10 +172,6 @@ tr:nth-child(even) {
     width: 200px;
 }
 
-#show {
-    margin-left: 20px;
-}
-
 #toggle_menu {
     padding: 5px;
     text-align: right;
@@ -184,6 +180,9 @@ tr:nth-child(even) {
 }
 
 #toggle_menu img {
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
     margin-left: 10px;
     width: 35px;
 }
